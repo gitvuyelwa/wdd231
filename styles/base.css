@@ -1,0 +1,30 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+header{
+    display:grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header span{
+    font-size: 1.2rem;
+    color:black;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hamburger::before {
+  content: "\2630";
+  font-size: 1.5rem;
+}
+.hamburger.show::before {
+  content: "\00D7";
+}
