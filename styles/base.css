@@ -69,6 +69,16 @@ header span {
 h1{
   margin-left: 10px;
 }
+section{
+    border: 0.5em solid #034c5d;
+    text-align: center;
+    
+}
+
+section img {
+    width: 200px;
+    height: auto;
+}
 
 footer{
   background-color: #eee;
