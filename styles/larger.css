@@ -27,4 +27,7 @@
     .navigation a{
         border: none;
     }
+    .buttons{
+        display:flex;
+    }
 }
