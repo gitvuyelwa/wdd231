@@ -40,7 +40,11 @@
                     height="16"></a>
         </div>
         <p> &copy;2025 &#128024; Vuyelwa Macanda &#128024 South Africa</p>
-        <p>LastModified</p>
+        <p>Last Modified: <span id="lastModif"></span></p>
+        <script>
+            const lastModified = document.lastModified;
+            document.getElementById("lastModif").textContent = lastModified;
+        </script>
     </footer>
     <script src="scripts/navigation.js"></script>
 </body>
