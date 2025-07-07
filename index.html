@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -30,17 +31,25 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section>
+        <section class="container">
             <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolorem minima accusamus autem ex cumque hic quos voluptates sunt voluptatum exercitationem officia suscipit ipsam, excepturi incidunt amet? Cumque, aspernatur quaerat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolorem minima accusamus autem ex cumque
+                hic quos voluptates sunt voluptatum exercitationem officia suscipit ipsam, excepturi incidunt amet?
+                Cumque, aspernatur quaerat?</p>
+        </section>
+        <section class="container">
             <h2>Student Photo</h2>
             <img src="images/profile.jpg" alt="profile" width="200">
+        </section>
+        <section class="container">
+            <h2>Web Certificate Courses</h2>
+            <p>fhrgjbjsrfb</p>
         </section>
     </main>
     <footer>
         <div class="social">
-            <a href="https://github.com/gitvuyelwa" target="_blank"><img src="images/github.svg" alt="github" width="16"
-                    height="16"></a>
+            <a href="https://github.com/gitvuyelwa" target="_blank"><img src="images/github.svg" alt="github account"
+                    width="16" height="16"></a>
             <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16"
                     height="16"></a>
             <a href="https://www.linkedin.com/in/vuyelwa-macanda-82433b225/" target="_blank"><img
@@ -48,12 +57,8 @@
             <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="16"
                     height="16"></a>
         </div>
-        <p> &copy;2025 &#128024; Vuyelwa Macanda &#128024 South Africa</p>
+        <p>2025<span id="currentyear"></span> | Vuyelwa Macanda | South Africa</p>
         <p>Last Modified: <span id="lastModif"></span></p>
-        <script>
-            const lastModified = document.lastModified;
-            document.getElementById("lastModif").textContent = lastModified;
-        </script>
     </footer>
     <script src="scripts/navigation.js"></script>
 </body>
