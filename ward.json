@@ -1,0 +1,28 @@
+{
+    "family name": "Macanda",
+    "moved in": "1 December 2024",
+    "number of family members": 4,
+    "visited by bishopric": true,
+    "family member data": [
+        {
+            "name": "Phumza Macanda",
+            "gender": "female",
+            "birthdate": "23 July 1975"
+        },
+        {
+            "name": "Imkhitha Macanda",
+            "gender": "female",
+            "birthdate": "9 October 1998"
+        },
+        {
+            "name": "Lukhanyo Macanda",
+            "gender": "male",
+            "birthdate": "11 November 2000"
+        },
+        {
+            "name": "Vuyelwa Macanda",
+            "gender": "female",
+            "birthdate": "12 November 2003"
+        }
+    ]
+}
