@@ -66,36 +66,43 @@ h1 {
 }
 
 h2 {
+  display: block;
+  width: 100%;
   background-color: black;
   color: #ccc;
   padding: 1rem;
   margin: 0;
-}
-
-.course h2 {
-  border: 0.2em solid black;
   text-align: center;
 }
+img{
+  display: block;
+  align-items: center;
+  height: 200px;
+  width: auto;
+}
+
+ .about, .photo {
+  flex: 1;
+  background-color: #e0e0e0;
+  padding: 1em;
+} 
 
 section {
-  border: 0.2em solid black;
-  text-align: center;
-}
+  border: .2em solid black;
+} 
 
-section img {
-  width: 200px;
-  height: auto;
-}
-
-.p {
+/* .p {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap: 5em;
-}
+} */
 
 
 .buttons {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
 }
 
 button {
@@ -106,13 +113,19 @@ button {
   color: black;
   border: none;
   border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 button:hover {
   background-color: grey;
 }
 
-
+/* .section{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: .5em;
+} */
 .course {
   border: 1px solid #ccc;
   padding: 1em;
@@ -120,6 +133,7 @@ button:hover {
   background: #f9f9f9;
   border: 0.2em solid black;
   text-align: center;
+  display:grid;
 }
 
 footer {

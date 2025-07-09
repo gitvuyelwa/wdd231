@@ -100,7 +100,6 @@ function displayCourses(courseArray) {
     div.classList.add('course');
     div.innerHTML = `
       <h3>${course.subject} ${course.number}: ${course.title}</h3>
-      <p><strong>Credits:</strong> ${course.credits}</p>
     `;
     courseList.appendChild(div);
     totalCredits += course.credits;
@@ -122,7 +121,7 @@ function filterCourses(department) {
 }
 
 // Add event listeners to filter buttons
-document.querySelectorAll('button[data-filter]').forEach(button => {
+document.querySelectorAll('buttons[data-filter]').forEach(button => {
     button.addEventListener('click', () => {
         const filter = button.getAttribute('data-filter');
         filterCourses(filter);
