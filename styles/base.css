@@ -44,13 +44,12 @@ header span {
 }
 
 .navigation.show {
-  display: block;
+  display: flex;
 }
 
 .navigation a {
   padding: .4rem;
   margin: 0 0 10px 0;
-  
   color: rgb(56, 56, 56);
   text-decoration: none;
   border-bottom: solid 1px #ddd;
@@ -59,9 +58,11 @@ header span {
 .navigation a:hover {
   background-color: grey;
 }
+
 h1 {
   margin-left: 10px;
-  max-width: auto;
+  display: block;
+  width: 100%;
 }
 
 h2 {
@@ -70,10 +71,15 @@ h2 {
   padding: 1rem;
   margin: 0;
 }
-section{
-    border: 0.2em solid black;
-    text-align: center;
 
+.course h2 {
+  border: 0.2em solid black;
+  text-align: center;
+}
+
+section {
+  border: 0.2em solid black;
+  text-align: center;
 }
 
 section img {
@@ -86,6 +92,7 @@ section img {
   grid-template-columns: 3fr 2fr;
   grid-gap: 5em;
 }
+
 
 .buttons {
   margin-bottom: 20px;
@@ -105,15 +112,14 @@ button:hover {
   background-color: grey;
 }
 
-.container {
-  overflow: hidden;
-}
 
 .course {
   border: 1px solid #ccc;
   padding: 1em;
   margin-bottom: 1em;
   background: #f9f9f9;
+  border: 0.2em solid black;
+  text-align: center;
 }
 
 footer {
