@@ -1,11 +1,11 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 600px) {
 
     header,
     main,
     nav,
     footer {
-        max-width: 900px;
-        margin: 0 auto;
+        max-width: 100%;
+        margin:  auto;
     }
 
     header {
@@ -19,15 +19,24 @@
     .navigation {
         display: block;
         border-bottom: solid 1px #eee;
+        
     }
 
     .navigation ul {
         display: flex;
     }
-    .navigation a{
+
+    .navigation a {
         border: none;
     }
-    .buttons{
-        display:flex;
+
+    .buttons {
+        display: flex;
     }
+    main{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: .5em;
+}
+
 }

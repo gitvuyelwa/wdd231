@@ -1,6 +1,5 @@
 * {
   font-family: 'Courier New', Courier, monospace;
-  box-sizing: border-box;
 }
 
 header {
@@ -48,33 +47,22 @@ header span {
   display: block;
 }
 
-.navigation ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .navigation a {
-  display: block;
-  padding: .8rem 10px;
+  padding: .4rem;
+  margin: 0 0 10px 0;
+  
   color: rgb(56, 56, 56);
   text-decoration: none;
   border-bottom: solid 1px #ddd;
 }
 
-.navigation li.current {
-  background-color: #eee;
-}
-
 .navigation a:hover {
   background-color: grey;
 }
-
 h1 {
   margin-left: 10px;
+  max-width: auto;
 }
-
-
 
 h2 {
   background-color: black;
@@ -82,10 +70,9 @@ h2 {
   padding: 1rem;
   margin: 0;
 }
-
-section {
-  border: 2px solid black;
-  text-align: center;
+section{
+    border: 0.2em solid black;
+    text-align: center;
 
 }
 
@@ -120,6 +107,13 @@ button:hover {
 
 .container {
   overflow: hidden;
+}
+
+.course {
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin-bottom: 1em;
+  background: #f9f9f9;
 }
 
 footer {

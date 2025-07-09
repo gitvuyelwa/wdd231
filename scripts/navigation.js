@@ -6,8 +6,8 @@ const currentYear = document.currentYear;
 document.getElementById("currentyear").textContent = currentYear;
 
 navButton.addEventListener('click', () => {
-  navButton.classList.toggle('show');
-  navLinks.classList.toggle('show');
+    navButton.classList.toggle('show');
+    navLinks.classList.toggle('show');
 
 });
 const courses = [
@@ -89,3 +89,45 @@ const courses = [
         completed: false
     }
 ];
+function displayCourses(courseArray) {
+  const courseList = document.getElementById('course-credits');
+  courseList.innerHTML = ''; // Clear previous
+
+  let totalCredits = 0;
+
+   courseArray.forEach(course => {
+    const div = document.createElement('div');
+    div.classList.add('course');
+    div.innerHTML = `
+      <h3>${course.subject} ${course.number}: ${course.title}</h3>
+      <p><strong>Credits:</strong> ${course.credits}</p>
+    `;
+    courseList.appendChild(div);
+    totalCredits += course.credits;
+  });
+
+  const creditsSummary = document.createElement('p');
+  creditsSummary.innerHTML = `<strong>Total Credits:</strong> ${totalCredits}`;
+  courseList.appendChild(creditsSummary);
+}
+
+// Filtering function
+function filterCourses(department) {
+    if (department === 'ALL') {
+        displayCourses(courses);
+    } else {
+        const filtered = courses.filter(course => course.subject === department);
+        displayCourses(filtered);
+    }
+}
+
+// Add event listeners to filter buttons
+document.querySelectorAll('button[data-filter]').forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        filterCourses(filter);
+    });
+});
+
+// Initial load — show all courses
+displayCourses(courses);
