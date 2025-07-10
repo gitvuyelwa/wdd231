@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
 
     header,
     main,
@@ -16,12 +16,10 @@
         display: none;
     }
 
-    .navigation {
+    nav {
         display: flex;
-        gap: 20px;
-        align-items: center;
-        align-content: center;
-        border-bottom: solid 1px #eee;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .navigation a {
@@ -58,11 +56,55 @@
     .buttons {
         display: flex;
     }
+*/
 
-    .course-credits {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 20px;
+@media only screen and (min-width: 600px) {
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  }
 
-    }
+   main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .about-photo-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Adjust ratio as needed */
+    gap: 1rem;
+  }
+
+  .about, .photo {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .hamburger{
+    display: none;
+  }
+  .profile-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+
+  #course-credits {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+ .course-card {
+    text-align: center;
+  }
+  
 }
