@@ -94,8 +94,8 @@ function filterCourses(category) {
     } else {
         filteredCourses = courses.filter(course => course.category === category);
     }
+        displayCourses(filteredCourses);
 
-    displayCourses(filteredCourses);
 }
 
 function displayCourses(courseList) {
@@ -112,15 +112,11 @@ function displayCourses(courseList) {
         courseContainer.appendChild(card);
         totalCredits += course.credits;
     });
-
-}
-totalCredits = courseList.reduce((total, course) => total + course.credits, 0);
-
 const creditSummary = document.createElement("p");
 creditSummary.innerHTML = `<strong>Total Credits: ${totalCredits}</strong>`;
 courseContainer.appendChild(creditSummary);
+}
 
-filterCourses("All")
 
 // Filtering function
 function filterCourses(department) {
@@ -139,4 +135,7 @@ document.querySelectorAll('buttons[data-filter]').forEach(button => {
         filterCourses(filter);
     });
 });
+
+
+displayCourses(courses)
 
