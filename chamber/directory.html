@@ -4,42 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vuyelwa Macanda | WDD231 </title>
+    <title>Gauteng Chamber of Commerce | WDD231 </title>
     <meta name="description"
         content="This is the chamber of commerce page for Vuyelwa Macanda in her WDD231 course which is mean to deepen skills and knowledge on HTML, JavaScript and CSS.">
     <meta name="author" content="Vuyelwa Macanda">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/directory.js" defer></script>
+
 
     <meta property="og:title" content="Gauteng Chamber of Commerce" />
-    <meta property="og:description" content="Support local businesses in Summerville through our Chamber Directory." />
+    <meta property="og:description" content="Support local businesses in Gauteng through our Chamber Directory." />
     <meta property="og:image" content="https://yourgithub.io/wdd231/chamber/images/og-image.jpg" />
     <meta property="og:url" content="https://yourgithub.io/wdd231/chamber/directory.html" />
     <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Gauteng Chamber of Commerce</h1>
+        <div class="logo-title">
+            <img src="images/gauteng.png" alt="Gauteng Logo">
+            <h1>Gauteng Chammber of Commerce</h1>
+        </div>
         <button id="ham-btn" class="hamburger"></button>
-            <nav id="nav-bar" class="navigation">
-                <a href="../index.html">Home</a>
-                <a href="discover.html">Discover</a>
-                <a href="directory.html" class="active">Directory</a>
-                <a href="join.html">Join</a>
-            </>
+        <nav id="nav-bar" class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="join.html">Join</a>
         </nav>
     </header>
+    <section class="thumbnail">
+        <img src="images/gauteng-thumbnail.png" alt="Gauteng Thumbnail">
+        <button class="cta-button">Keynote Tickets</button>
+    </section>
 
     <main>
-        <h2>Business Directory</h2>
+        <h2>Home</h2>
+        <section class="info-panels">
+            <div class="events"><h3>Events</h3></div>
+            <div class="weather"><h3>Weather</h3></div>
+            <div class="forecast"><h3>Forecast</h3></div>
+        </section>
         <div class="view-toggle">
-            <button id="gridView">Grid View</button>
-            <button id="listView">List View</button>
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
         </div>
 
-        <section id="directory" class="grid-view">
+        <section id="members" class="grid-view">
             <!-- Business member cards injected via JS -->
         </section>
     </main>

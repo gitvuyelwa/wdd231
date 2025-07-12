@@ -1,0 +1,65 @@
+[
+  {
+    "name": "TechVerse Solutions",
+    "tagline": "Innovating Tomorrow",
+    "email": "contact@techverse.com",
+    "phone": "555-123-4567",
+    "website": "https://techverse.com",
+    "image": "images/techverse.png",
+    "membership": 3
+  },
+  {
+    "name": "GreenLeaf Landscaping",
+    "tagline": "Growing with You",
+    "email": "info@greenleaf.com",
+    "phone": "555-987-6543",
+    "website": "https://greenleaf.com",
+    "image": "images/greenleaf.png",
+    "membership": 2
+  },
+  {
+    "name": "PixelCraft Media",
+    "tagline": "Design. Develop. Deliver.",
+    "email": "hello@pixelcraft.io",
+    "phone": "555-000-1111",
+    "website": "https://pixelcraft.io",
+    "image": "images/pixelcraft.png",
+    "membership": 3
+  },
+  {
+    "name": "Wellness First",
+    "tagline": "Your Health Matters",
+    "email": "support@wellnessfirst.org",
+    "phone": "555-321-6549",
+    "website": "https://wellnessfirst.org",
+    "image": "images/wellness.png",
+    "membership": 1
+  },
+  {
+    "name": "BrightPath Academy",
+    "tagline": "Educate. Empower. Excel.",
+    "email": "info@brightpath.edu",
+    "phone": "555-432-1234",
+    "website": "https://brightpath.edu",
+    "image": "images/brightpath.png",
+    "membership": 2
+  },
+  {
+    "name": "Urban Eats Café",
+    "tagline": "Fresh Local Bites",
+    "email": "hello@urbaneats.com",
+    "phone": "555-765-9870",
+    "website": "https://urbaneats.com",
+    "image": "images/urbaneats.png",
+    "membership": 1
+  },
+  {
+    "name": "Timbuktu Tours",
+    "tagline": "Adventure Awaits",
+    "email": "bookings@timbuktutours.ml",
+    "phone": "223-555-7890",
+    "website": "https://timbuktutours.ml",
+    "image": "images/tours.png",
+    "membership": 3
+  }
+]

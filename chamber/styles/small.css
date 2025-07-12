@@ -1,0 +1,95 @@
+@media only screen and (min-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .logo-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        border: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+
+    .hamburger {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hamburger.show {
+        content: "\2630";
+        font-size: 1.5rem;
+    }
+
+    .hamburger.show::after {
+        content: "\00D7";
+        font-size: 2rem;
+    }
+
+    .hero img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .cta-button {
+        position: static;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    /* Info Panels */
+    .info-panels {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .info-panels h3 {
+        font-size: 1rem;
+    }
+
+    /* View Toggle */
+    .view-toggle button {
+        width: 45%;
+        margin: 0.25rem;
+        font-size: 1rem;
+    }
+
+    #members.grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #members.list .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card h2 {
+        font-size: 1.1rem;
+    }
+}
