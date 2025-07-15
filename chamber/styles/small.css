@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -12,11 +12,11 @@
     }
 
     nav {
-        display: flex !important;
-        flex-direction: row;
-        justify-content: center;
-        border: none;
-    }
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  }
 
     main {
         display: grid;
@@ -25,8 +25,8 @@
         padding: 1rem;
     }
 
-
     .hamburger {
+        display: none;
         background: none;
         border: none;
         cursor: pointer;
@@ -35,6 +35,7 @@
     .hamburger.show {
         content: "\2630";
         font-size: 1.5rem;
+    
     }
 
     .hamburger.show::after {
@@ -47,7 +48,7 @@
         object-fit: cover;
     }
 
-    .cta-button {
+    .thumbnail-button {
         position: static;
         margin: 1rem auto;
         display: block;
@@ -62,9 +63,10 @@
 
     .info-panels h3 {
         font-size: 1rem;
+        display: flex;
     }
 
-    /* View Toggle */
+    View Toggle
     .view-toggle button {
         width: 45%;
         margin: 0.25rem;

@@ -9,10 +9,11 @@
         content="This is the chamber of commerce page for Vuyelwa Macanda in her WDD231 course which is mean to deepen skills and knowledge on HTML, JavaScript and CSS.">
     <meta name="author" content="Vuyelwa Macanda">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="styles/directory.css" />
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/directory.js" defer></script>
+    <script src="data/members.json"></script>
 
 
     <meta property="og:title" content="Gauteng Chamber of Commerce" />
@@ -29,20 +30,17 @@
 
 <body>
     <header>
-        <div class="logo-title">
-            <img src="images/gauteng.png" alt="Gauteng Logo">
-            <h1>Gauteng Chammber of Commerce</h1>
-        </div>
+        <img src="images/gauteng.png" alt="Site Logo" width="100" height="100" class="logo">
+        <h1>Gauteng Chamber of Commerce</h1>
         <button id="ham-btn" class="hamburger"></button>
         <nav id="nav-bar" class="navigation">
-            <a href="../index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html" class="active">Directory</a>
-            <a href="join.html">Join</a>
+            <a href="index.html">Home</a>
+            <a href="chamber/directory.html">Chamber Project</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
     <section class="thumbnail">
-        <img src="images/gauteng-thumbnail.png" alt="Gauteng Thumbnail">
+        <img src="images/gauteng-thumbnail.jpg" alt="Gauteng Thumbnail">
         <button class="cta-button">Keynote Tickets</button>
     </section>
 
@@ -50,7 +48,8 @@
         <h2>Home</h2>
         <section class="info-panels">
             <div class="events"><h3>Events</h3></div>
-            <div class="weather"><h3>Weather</h3></div>
+            <div class="weather" id="weather"><h3>Weather</h3>
+            <img src="images/weather.png" width="100px" height="100px"></div>
             <div class="forecast"><h3>Forecast</h3></div>
         </section>
         <div class="view-toggle">
@@ -59,7 +58,6 @@
         </div>
 
         <section id="members" class="grid-view">
-            <!-- Business member cards injected via JS -->
         </section>
     </main>
 

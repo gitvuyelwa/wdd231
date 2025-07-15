@@ -1,66 +1,65 @@
 [
   {
-    "name": "Gold Reef Business Park",
-    "tagline": "Innovating Tomorrow",
-    "email": "contact@techverse.com",
-    "phone": "555-123-4567",
-    "website": "https://techverse.com",
-    "image": "images/techverse.png",
-    "membership": 3
+    "name": "Jozi Tech Solutions",
+    "address": "45 Empire Rd, Johannesburg, Gauteng",
+    "phone": "+27 11 123 4567",
+    "website": "https://jozitech.co.za",
+    "image": "images/jozi-tech.png",
+    "membership": 3,
+    "description": "Leading provider of custom software and IT support in Gauteng."
   },
   {
-    "name": "GreenLeaf Landscaping",
-    "tagline": "Growing with You",
-    "email": "info@greenleaf.com",
-    "phone": "555-987-6543",
-    "website": "https://greenleaf.com",
-    "image": "images/greenleaf.png",
-    "membership": 2
+    "name": "Mamelodi Green Spaces",
+    "address": "102 Ubuntu St, Mamelodi, Gauteng",
+    "phone": "+27 12 987 6543",
+    "website": "https://greenspaces.co.za",
+    "image": "images/mamelodi.jpg",
+    "membership": 2,
+    "description": "Landscaping and environmental design with a sustainable approach."
   },
   {
-    "name": "PixelCraft Media",
-    "tagline": "Design. Develop. Deliver.",
-    "email": "hello@pixelcraft.io",
-    "phone": "555-000-1111",
-    "website": "https://pixelcraft.io",
-    "image": "images/pixelcraft.png",
-    "membership": 3
+    "name": "Gauteng Courier Express",
+    "address": "16 Freight Ave, Midrand, Gauteng",
+    "phone": "+27 10 345 6789",
+    "website": "https://gcexpress.co.za",
+    "image": "images/courier.webp",
+    "membership": 1,
+    "description": "Fast, affordable, and reliable courier services across Gauteng."
   },
   {
-    "name": "Wellness First",
-    "tagline": "Your Health Matters",
-    "email": "support@wellnessfirst.org",
-    "phone": "555-321-6549",
-    "website": "https://wellnessfirst.org",
-    "image": "images/wellness.png",
-    "membership": 1
+    "name": "Soweto Digital Hub",
+    "address": "88 Vilakazi St, Soweto, Gauteng",
+    "phone": "+27 87 654 3210",
+    "website": "https://sowetodigitalhub.org",
+    "image": "images/soweto-hub.jpg",
+    "membership": 2,
+    "description": "Community-driven co-working and tech innovation space."
   },
   {
-    "name": "BrightPath Academy",
-    "tagline": "Educate. Empower. Excel.",
-    "email": "info@brightpath.edu",
-    "phone": "555-432-1234",
-    "website": "https://brightpath.edu",
-    "image": "images/brightpath.png",
-    "membership": 2
+    "name": "Tshwane Engineering Works",
+    "address": "12 Meiring Naude Rd, Pretoria, Gauteng",
+    "phone": "+27 12 345 6780",
+    "website": "https://tshwaneeng.co.za",
+    "image": "images/tshwane.jpg",
+    "membership": 3,
+    "description": "Industrial and mechanical engineering firm specializing in manufacturing solutions."
   },
   {
-    "name": "Urban Eats Café",
-    "tagline": "Fresh Local Bites",
-    "email": "hello@urbaneats.com",
-    "phone": "555-765-9870",
-    "website": "https://urbaneats.com",
-    "image": "images/urbaneats.png",
-    "membership": 1
+    "name": "Gauteng Organic Markets",
+    "address": "Market Lane, Sandton, Gauteng",
+    "phone": "+27 11 789 1234",
+    "website": "https://gorganic.co.za",
+    "image": "images/gauteng-market.jpg",
+    "membership": 1,
+    "description": "Supplier of locally sourced organic products and farmers markets."
   },
   {
-    "name": "Timbuktu Tours",
-    "tagline": "Adventure Awaits",
-    "email": "bookings@timbuktutours.ml",
-    "phone": "223-555-7890",
-    "website": "https://timbuktutours.ml",
-    "image": "images/tours.png",
-    "membership": 3
+    "name": "Joburg Event Planners",
+    "address": "120 Rosebank Rd, Johannesburg, Gauteng",
+    "phone": "+27 11 456 7890",
+    "website": "https://joburgevents.co.za",
+    "image": "images/event-planner.jpg",
+    "membership": 2,
+    "description": "Professional event management services for corporate and private functions."
   }
 ]
-

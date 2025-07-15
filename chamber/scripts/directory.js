@@ -1,3 +1,12 @@
+const navButton = document.querySelector('#ham-btn');
+const navLinks = document.querySelector('#nav-bar');
+
+
+navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show');
+    navLinks.classList.toggle('show');
+
+});
 const gridBtn = document.getElementById('grid-view');
 const listBtn = document.getElementById('list-view');
 const memberSection = document.getElementById('members');
@@ -36,7 +45,6 @@ function displayMembers(members) {
       <p><strong>Email:</strong> <a href="mailto:${member.email}">${member.email}</a></p>
       <p><strong>Phone:</strong> ${member.phone}</p>
       <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
-      <p><strong>Membership Level:</strong> ${getMembershipLabel(member.membership)}</p>
     `;
 
     memberSection.appendChild(card);
@@ -53,3 +61,9 @@ function getMembershipLabel(level) {
 
 // ✅ Initialize
 fetchMembers();
+
+// const weatherDisplay = document.querySelector('.weather');
+// weatherDisplay.innerHTML=`
+// `<span>img src="images/${weather.icon}" alt="${weather.condition} icon"
+//     ${weather.temp}°C, ${weather.condition}</span>
+//   `;
