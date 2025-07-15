@@ -148,7 +148,10 @@ color: #fff;
   margin: -1rem -1rem 1rem -1rem;
 }
 
-
+.info-panels img{
+  width: 100px;
+  height: auto;
+}
 
 
 /* DIRECTORY TOGGLE */
