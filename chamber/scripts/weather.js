@@ -4,7 +4,7 @@ const forecastSection = document.querySelector('.forecast');
 const membersSection = document.getElementById('members');
 const API_KEY = 'c39bfa0f99eec65be6af1447f0bdad3b';
 const CITY = 'Johannesburg';
-const MEMBER_JSON = 'members.json'; // Example: local or hosted JSON
+const MEMBER_JSON = 'members.json'; 
 
 // Weather Fetch
 async function fetchWeather() {

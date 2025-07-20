@@ -61,9 +61,3 @@ function getMembershipLabel(level) {
 
 // ✅ Initialize
 fetchMembers();
-
-// const weatherDisplay = document.querySelector('.weather');
-// weatherDisplay.innerHTML=`
-// `<span>img src="images/${weather.icon}" alt="${weather.condition} icon"
-//     ${weather.temp}°C, ${weather.condition}</span>
-//   `;
