@@ -94,7 +94,7 @@ function filterCourses(category) {
     } else {
         filteredCourses = courses.filter(course => course.category === category);
     }
-        displayCourses(filteredCourses);
+    displayCourses(filteredCourses);
 
 }
 
@@ -112,9 +112,9 @@ function displayCourses(courseList) {
         courseContainer.appendChild(card);
         totalCredits += course.credits;
     });
-const creditSummary = document.createElement("p");
-creditSummary.innerHTML = `<strong>Total Credits: ${totalCredits}</strong>`;
-courseContainer.appendChild(creditSummary);
+    const creditSummary = document.createElement("p");
+    creditSummary.innerHTML = `<strong>Total Credits: ${totalCredits}</strong>`;
+    courseContainer.appendChild(creditSummary);
 }
 
 
@@ -136,6 +136,25 @@ document.querySelectorAll('buttons[data-filter]').forEach(button => {
     });
 });
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
 
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+courseDiv.addEventListener('click', () => {
+    displayCourseDetails(course);
+});
 displayCourses(courses)
 
