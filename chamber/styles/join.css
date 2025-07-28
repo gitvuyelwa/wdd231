@@ -1,0 +1,280 @@
+ * {
+   box-sizing: border-box;
+   padding: 0;
+ }
+
+ body {
+   font-family: 'Courier New', Courier, monospace;
+   line-height: 1.5;
+   margin: 0;
+   padding: 0
+ }
+
+ header {
+   display: grid;
+   grid-template-columns: auto 44px auto;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   background-color: #ddd;
+   color: black;
+ }
+nav {
+    grid-column: 1/4;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+nav.show {
+  display: flex;
+}
+ 
+
+ .logo {
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+ }
+ .logo img {
+  width: 60px;
+  height: auto;
+}
+
+ .hamburger {
+   width: 44px;
+   height: 44px;
+   grid-column: 3/4;
+   justify-self: end;
+   background-color: none;
+   border: 2px solid white;
+   cursor: pointer;
+ }
+
+ .hamburger::after {
+   content: "\2630";
+   font-size: 1.5rem;
+ }
+
+ .hamburger.show::after {
+   content: "\00D7";
+   font-size: 2rem;
+ }
+
+nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+nav.show {
+  display: flex;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: grey;
+  border-radius: 6px;
+}
+
+ form {
+   background-color: #fff;
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   margin: 0 auto;
+ }
+
+ /* Form Labels and Fields */
+ form label {
+   display: block;
+   margin-bottom: 1rem;
+   font-weight: bold;
+ }
+
+ form input,
+ form select,
+ form textarea {
+   width: 100%;
+   padding: 0.7rem;
+   margin-top: 0.3rem;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+   font-size: 1rem;
+   background-color: #fff;
+   transition: border-color 0.3s ease;
+ }
+
+ form input:focus,
+ form textarea:focus,
+ form select:focus {
+   outline: none;
+   border-color: #007BFF;
+   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+ }
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+ /* Submit Button */
+ input[type="submit"] {
+   background-color: #007BFF;
+   color: white;
+   font-size: 1rem;
+   padding: 0.75rem 1.5rem;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+
+ form input[type="submit"]:hover {
+   background-color: #0056b3;
+ }
+
+
+ /* Membership Cards */
+ .membership-cards {
+   display: flex;
+   flex-direction: column;
+   margin: 2rem ;
+   gap: 1rem;
+   animation: slideFadeIn 1.5s ease;
+ }
+
+ .card {
+   flex: 1 1 200px;
+   background: #fff;
+   padding: 1rem;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   text-align: center;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+   transition: transform 0.3s ease;
+ }
+
+ .card:hover {
+   transform: scale(1.02);
+ }
+
+ .card a {
+   display: inline-block;
+   margin-top: 0.5rem;
+   color: #007BFF;
+   text-decoration: underline;
+ }
+
+ /* Modal Styles (basic) */
+ .modal {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   justify-content: center;
+   align-items: center;
+   z-index: 999;
+ }
+
+ .modal:target {
+   display: flex;
+ }
+
+ .modal-content {
+   background-color: white;
+   padding: 2rem;
+   border-radius: 10px;
+   max-width: 400px;
+   text-align: center;
+ }
+
+ /* Animation on Load */
+ @keyframes slideFadeIn {
+   from {
+     opacity: 0;
+     transform: translateY(40px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+
+ /* .membership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  animation: fadeIn 2s ease-in;
+} */
+ .membership-cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 2rem;
+   gap: 1rem;
+   animation: slideFadeIn 1.5s ease;
+ }
+
+ .card {
+   border: 1px solid #ccc;
+   padding: 1rem;
+   width: 100%;
+   max-width: 300px;
+   transition: all 0.3s ease;
+ }
+
+ footer {
+   background-color: #ddd;
+   padding: 1rem 10px;
+   text-align: center;
+ }
+
+ .social {
+   display: flex;
+   justify-content: center;
+   column-gap: 8px;
+ }
+
+ .social a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   border: #ccc solid 1px;
+   border-radius: 22px;
+ }
+
+ .social img {
+   width: 22px;
+   height: 22px;
+ }
+
+ .social a:hover {
+   background-color: #ddd;
+ }
+
+
+
+ .modal:target {
+   display: flex;
+ }
+
+ .modal-content {
+   background: white;
+   padding: 1rem;
+   border-radius: 5px;
+ }

@@ -1,0 +1,51 @@
+
+@media (min-width: 760px) {
+  header{
+    color: black;
+  }
+  main {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  .logo img {
+  width: 60px;
+  height: auto;
+}
+
+  form {
+    flex: 1 1 60%;
+    max-width: 600px;
+    margin: 0;
+  }
+
+  .membership-cards {
+    flex: 1 1 35%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  nav a {
+    color: black;
+    padding: 0.5rem 1rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .modal-content {
+    max-width: 400px;
+  }
+
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuyelwa Macanda | WDD231 </title>
+    <meta name="description"
+        content="This is the about page for Vuyelwa Macanda in her WDD231 course which is mean to deepen skills and knowledge on HTML, JavaScript and CSS.">
+    <meta name="author" content="Vuyelwa Macanda">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+    <link rel="icon" href="favicon.ico">
+    <!-- <meta property="facebook:title" content="Homepage- Vuyelwa Macanda's Facebook">
+    <meta property="facebook:description" content="">
+    <meta property="facebook:image" content="">
+    <meta property="fcebook:url" content=""> -->
+    </head>
+
+    <body>
+        <header>
+            <img src="../images/gym.svg" alt="Site Logo" width="100" height="100" class="logo">
+            <button id="ham-btn" class="hamburger"></button>
+            <nav id="nav-bar" class="navigation">
+                <a href="index.html">Home</a>
+      <a href="../chamber/directory.html">Directory</a>
+      <a href="#">Final Project</a>
+      <a href="join.html">Join</a>
+            </nav>
+        </header>
+        <main>
+        
+            <form action="thankyou.html" method="get">
+                <h1>Membership Application Form</h1>
+                <label>
+                    First Name:
+                    <input type="text" name="firstname" required title="Enter your first name"
+                        autocomplete="given-name" />
+                </label>
+
+                <label>
+                    Last Name:
+                    <input type="text" name="lastname" required title="Enter your last name"
+                        autocomplete="family-name" />
+                </label>
+
+                <label>
+                    Title in Organization:
+                    <input type="text" name="orgtitle" pattern="[A-Za-z\- ]{7,}"
+                        title="Enter your title (only letters, hyphens, and spaces, at least 7 characters)"
+                        autocomplete="organization-title" />
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" required title="Enter a valid email" autocomplete="email"
+                        placeholder="example@domain.com" />
+                </label>
+
+                <label>
+                    Mobile Number:
+                    <input type="tel" name="phone" required title="Enter your mobile number" autocomplete="tel" />
+                </label>
+
+                <label>
+                    Business Name:
+                    <input type="text" name="business" required title="Enter your organization’s name"
+                        autocomplete="organization" />
+                </label>
+
+                <label>
+                    Membership Level:
+                    <select name="membership" title="Select a membership level">
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business Description:
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp" />
+
+                <input type="submit" value="Join Now" />
+            </form>
+            <div class="membership-cards">
+                <div class="card" id="np-card">
+                    <h3>NP Membership</h3>
+                    <a href="#np-modal">More Info</a>
+                </div>
+                <div class="card" id="bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <a href="#bronze-modal">More Info</a>
+                </div>
+                <div class="card" id="silver-card">
+                    <h3>Silver Membership</h3>
+                    <a href="#silver-modal">More Info</a>
+                </div>
+                <div class="card" id="gold-card">
+                    <h3>Gold Membership</h3>
+                    <a href="#gold-modal">More Info</a>
+                </div>
+            </div>
+            <div class="modal" id="np-modal">
+                <div class="modal-content">
+                    <h4>NP Membership Benefits</h4>
+                    <p>Free for non-profits. Includes event access and a directory listing.</p>
+                    <a href="#">Close</a>
+                </div>
+            </div>
+            <div class="modal" id="bronze-modal">
+                <div class="modal-content">
+                    <h4>Bronze Membership Benefits</h4>
+                    <p>Free for Bronze Members. Includes event access and a directory listing.</p>
+                    <a href="#">Close</a>
+                </div>
+            </div>
+            <div class="modal" id="silver-modal">
+                <div class="modal-content">
+                    <h4>Silver Membership Benefits</h4>
+                    <p>Free for silver members. Includes event access and a directory listing.</p>
+                    <a href="#">Close</a>
+                </div>
+            </div>
+            <div class="modal" id="gold-modal">
+                <div class="modal-content">
+                    <h4>Gold Membership Benefits</h4>
+                    <p>Free for Gold Members. Includes event access and a directory listing.</p>
+                    <a href="#">Close</a>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://github.com/gitvuyelwa" target="_blank"><img src="images/github.svg"
+                        alt="github account" width="16" height="16"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="instagram"
+                        width="16" height="16"></a>
+                <a href="https://www.linkedin.com/in/vuyelwa-macanda-82433b225/" target="_blank"><img
+                        src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+                <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="16"
+                        height="16"></a>
+            </div>
+            <p>&copy; <span id="currentyear"></span> | Vuyelwa Macanda | South Africa</p>
+            <p>Last Modified: <span id="lastModif"></span></p>
+        </footer>
+    </body>
+
+</html>

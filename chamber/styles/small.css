@@ -11,12 +11,11 @@
         gap: 0.5rem;
     }
 
-    nav {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    border: none;
-  }
+    nav li {
+        flex-direction: row;
+        justify-self: end;
+        color: white;
+    }
 
     main {
         display: grid;
@@ -35,7 +34,7 @@
     .hamburger.show {
         content: "\2630";
         font-size: 1.5rem;
-    
+
     }
 
     .hamburger.show::after {
@@ -44,8 +43,9 @@
     }
 
     .hero img {
-        height: 200px;
-        object-fit: cover;
+        width: 100%;
+        height: auto;
+
     }
 
     .thumbnail-button {
@@ -66,8 +66,7 @@
         display: flex;
     }
 
-    View Toggle
-    .view-toggle button {
+    View Toggle .view-toggle button {
         width: 45%;
         margin: 0.25rem;
         font-size: 1rem;
