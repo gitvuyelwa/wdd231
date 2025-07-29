@@ -11,19 +11,17 @@
         gap: 0.5rem;
     }
 
-    nav li {
-        flex-direction: row;
-        justify-self: end;
-        color: white;
-    }
-
     main {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 1rem;
     }
-
+   nav li {
+        flex-direction: row;
+        justify-self: end;
+        color: white;
+    }
     .hamburger {
         display: none;
         background: none;

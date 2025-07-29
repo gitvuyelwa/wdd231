@@ -1,6 +1,6 @@
  * {
    box-sizing: border-box;
-   padding: 0;
+   padding: 10px;
  }
 
  body {
@@ -10,81 +10,82 @@
    padding: 0
  }
 
- header {
-   display: grid;
-   grid-template-columns: auto 44px auto;
-   justify-content: space-between;
-   align-items: center;
-   padding: 1rem;
-   background-color: #ddd;
-   color: black;
- }
-nav {
-    grid-column: 1/4;
-  border-radius: 8px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: white;
+header {
+  display: grid;
+  grid-template-columns: auto 44px auto;
+  align-items: center;
+  /* padding: 1rem; */
+  background-color: #ddd;
+  color: black;
 }
 
-nav.show {
-  display: flex;
-}
- 
-
- .logo {
-   display: flex;
-   align-items: center;
-   gap: .5rem;
- }
- .logo img {
+/*COME BACK*/
+header img {
+  /* display: block; */
   width: 60px;
   height: auto;
 }
 
- .hamburger {
-   width: 44px;
-   height: 44px;
-   grid-column: 3/4;
-   justify-self: end;
-   border: 2px solid white;
-   cursor: pointer;
- }
+.logo {
+  grid-column: 1/4;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.hamburger {
+  width: 44px;
+  height: 44px;
+  grid-column: 3/4;
+  justify-self: end;
+  background-color: none;
+  border: 2px solid white;
+  cursor: pointer;
+}
 
- .hamburger::after {
-   content: "\2630";
-   font-size: 1.5rem;
- }
+.hamburger::after {
+  content: "\2630";
+  font-size: 1.5rem;
+}
 
- .hamburger.show::after {
-   content: "\00D7";
-   font-size: 2rem;
- }
+.hamburger.show::after {
+  content: "\00D7";
+  font-size: 2rem;
+}
+
 
 nav {
+    grid-column: 1/4;
   display: none;
-  flex-direction: column;
-  align-items: center;
-  background-color: #333;
-  padding: 1rem 0;
 }
 
 nav.show {
   display: flex;
 }
 
-nav a {
-  color: black;
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-align: center;
+  list-style: none;
+  padding: 1rem 0;
+  color: rgb(56, 56, 56);
+}
+nav ul li a{
+  border-radius: 8px;
+  display: grid;
+  grid-column: 3/4;
+  text-align: center;
   text-decoration: none;
-  padding: 0.5rem;
+  color: black;
 }
 
+nav ul li.current{
+  background-color: darkgray;
+}
 nav a:hover {
   background-color: grey;
-  border-radius: 6px;
 }
-
  form {
    background-color: #fff;
    padding: 2rem;
@@ -120,10 +121,12 @@ nav a:hover {
    border-color: #007BFF;
    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
  }
-textarea {
-  min-height: 100px;
-  resize: vertical;
-}
+
+ textarea {
+   min-height: 100px;
+   resize: vertical;
+ }
+
  /* Submit Button */
  input[type="submit"] {
    background-color: #007BFF;
@@ -145,7 +148,7 @@ textarea {
  .membership-cards {
    display: flex;
    flex-direction: column;
-   margin: 2rem ;
+   margin: 2rem;
    gap: 1rem;
    animation: slideFadeIn 1.5s ease;
  }
@@ -258,8 +261,8 @@ textarea {
  }
 
  .social img {
-   width: 22px;
-   height: 22px;
+   width: 50px;
+   height: 50px;
  }
 
  .social a:hover {

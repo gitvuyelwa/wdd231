@@ -13,7 +13,45 @@
   width: 60px;
   height: auto;
 }
+.logo {
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
 
+    nav li {
+        flex-direction: row;
+        justify-self: end;
+        color: black;
+    }
+
+    .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hamburger.show {
+        content: "\2630";
+        font-size: 1.5rem;
+        cursor: pointer;
+
+
+    }
+
+    .hamburger.show::after {
+        content: "\00D7";
+        font-size: 2rem;
+        cursor: pointer;
+
+    }
+     View Toggle .view-toggle button {
+        width: 45%;
+        margin: 0.25rem;
+        font-size: 1rem;
+    }
   form {
     flex: 1 1 60%;
     max-width: 600px;
