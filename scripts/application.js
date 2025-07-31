@@ -5,8 +5,6 @@ document.getElementById("lastModif").textContent = lastModified;
 const currentYear = document.currentYear;
 document.getElementById("currentyear").textContent = currentYear;
 
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navLinks.classList.toggle('show');
-
+document.getElementById('ham-btn').addEventListener('click', () => {
+    document.getElementById('nav-bar').classList.toggle('open');
 });

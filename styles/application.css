@@ -4,21 +4,22 @@
   font-weight: 300;
   font-style: normal;
   --lavender-web: #e3dfffff;
---dark-purple: #160c28ff;
---ultra-violet: #6c698dff;
---verdigris: #50a2a7ff;
---night: #01110aff;
-margin: 5px;
+  --dark-purple: #160c28ff;
+  --ultra-violet: #6c698dff;
+  --verdigris: #50a2a7ff;
+  --night: #01110aff;
+  margin: 5px;
 }
 
-header{
-    background-color: #160c28ff;
-    color: #e3dfffff;
-    display: flex;
+header {
+  background-color: #160c28ff;
+  color: #e3dfffff;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 
 }
+
 header img {
   display: block;
   width: 60px;
@@ -32,9 +33,10 @@ header img {
   gap: .5rem;
   font-size: 1.5rem;
 }
+
 nav {
-    grid-column: 1/4;
-  display: none;
+  grid-column: 1/4;
+  display: flex;
 }
 
 nav.show {
@@ -50,7 +52,8 @@ nav ul {
   padding: 1rem 0;
   color: #e3dfffff;
 }
-nav ul li a{
+
+nav ul li a {
   border-radius: 8px;
   display: flex;
   text-align: center;
@@ -58,18 +61,20 @@ nav ul li a{
   color: #e3dfffff;
 }
 
-nav ul li.current{
+nav ul li.current {
   background-color: #6c698dff;
 }
-nav a:hover {
-  background-color: #6c698dff;
 
+nav a:hover {
+  background-color: #6c698dff
 }
+
 /*hamburger*/
 .hamburger {
-    display: none;
+  display: none;
   border: none;
   cursor: pointer;
+  background-color: none;
 }
 
 .hamburger::after {
@@ -80,13 +85,38 @@ nav a:hover {
 .hamburger.show::after {
   content: "\00D7";
   font-size: 2rem;
+
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: none;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+button:hover {
+  background-color: grey;
+}
 
 /*footer css*/
 footer {
   background-color: #160c28ff;
-  color: #e3dfffff;;
+  color: #e3dfffff;
+  ;
   padding: 1rem 10px;
   text-align: center;
 }
@@ -114,4 +144,9 @@ footer {
 
 .social a:hover {
   background-color: #6c698dff;
+}
+
+ @media only screen and (min-width: 600px) {
+
+  
 }
