@@ -32,6 +32,7 @@ header img {
   align-items: center;
   gap: .5rem;
 }
+
 .hamburger {
   width: 44px;
   height: 44px;
@@ -54,12 +55,16 @@ header img {
 
 
 nav {
-    grid-column: 1/4;
-  display: none;
+  grid-column: 1/4;
+  display: grid;
 }
 
 nav.show {
-  display: flex;
+  display: grid;
+}
+
+.navigation {
+  display: none;
 }
 
 nav ul {
@@ -71,35 +76,41 @@ nav ul {
   padding: 1rem 0;
   color: rgb(56, 56, 56);
 }
-nav ul li a{
+
+nav a {
   border-radius: 8px;
-  display: block;
+  display: grid;
   text-align: center;
   text-decoration: none;
   color: white;
 }
 
-nav ul li.current{
+/* comment */
+nav .current {
   background-color: darkgray;
 }
+
 nav a:hover {
   background-color: grey;
 }
 
-section{
+section {
   display: block;
 }
+
 .hero {
   width: 100%;
   position: relative;
 }
-.hero img{
+
+.hero img {
   width: 100%;
   height: auto;
   object-fit: cover;
   position: relative;
 }
-.hero div{
+
+.hero div {
   color: white;
   text-align: center;
   top: 50%;

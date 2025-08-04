@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Historic Downtown",
+    "image": "images/item1.webp",
+    "address": "123 Main St, MyCity",
+    "description": "Explore charming shops, local cafes, and historic architecture."
+  },
+  {
+    "title": "Riverwalk Park",
+    "image": "images/item2.webp",
+    "address": "456 River Rd, MyCity",
+    "description": "Perfect for picnics and scenic sunset walks along the river."
+  },
+  {
+    "title": "City Art Museum",
+    "image": "images/item3.webp",
+    "address": "789 Art Ave, MyCity",
+    "description": "A collection of contemporary and classical art exhibits."
+  },
+  {
+    "title": "Botanical Gardens",
+    "image": "images/item4.webp",
+    "address": "101 Garden Lane, MyCity",
+    "description": "Lush gardens showcasing native and exotic plant species."
+  },
+  {
+    "title": "Science Discovery Center",
+    "image": "images/item5.webp",
+    "address": "202 Science Dr, MyCity",
+    "description": "Hands‑on exhibits for kids and curious adults alike."
+  },
+  {
+    "title": "Historic Theater",
+    "image": "images/item6.webp",
+    "address": "303 Stage St, MyCity",
+    "description": "Restored 1920s theater hosting live performances and films."
+  },
+  {
+    "title": "Riverfront Market",
+    "image": "images/item7.webp",
+    "address": "404 Market Blvd, MyCity",
+    "description": "Open‑air market with local produce, crafts, and street food."
+  },
+  {
+    "title": "City Aquarium",
+    "image": "images/item8.webp",
+    "address": "505 Ocean Ave, MyCity",
+    "description": "Marine exhibits and educational programs for all ages."
+  }
+]

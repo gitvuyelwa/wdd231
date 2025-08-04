@@ -17,9 +17,16 @@
         gap: 2rem;
         padding: 1rem;
     }
-   nav li {
+    nav {
+        display: flex;
         flex-direction: row;
-        justify-self: end;
+        justify-content: flex-end;
+        color: white;
+        grid-column: 1/4;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
         color: white;
     }
     .hamburger {
@@ -32,7 +39,6 @@
     .hamburger.show {
         content: "\2630";
         font-size: 1.5rem;
-
     }
 
     .hamburger.show::after {
