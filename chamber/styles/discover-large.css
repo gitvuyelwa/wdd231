@@ -49,7 +49,6 @@
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(4);
         grid-template-areas:
             "card1 card2 card3"
             "card4 card5 card6"
