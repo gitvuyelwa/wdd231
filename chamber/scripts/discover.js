@@ -1,4 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
+
+const navButton = document.querySelector('#ham-btn');
+const navLinks = document.querySelector('#nav-bar');
+
+
+navButton.addEventListener('click', () => {
+  navButton.classList.toggle('show');
+  navLinks.classList.toggle('show');
+
+});document.addEventListener("DOMContentLoaded", () => {
     // Visitor message
     const messageEl = document.getElementById("visitorMessage");
     const lastVisit = localStorage.getItem("lastVisit");
@@ -18,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("lastVisit", now.toString());
 
     // Fetch and render cards
-    fetch("data/attractions.json")
+    fetch("data/discover.json")
         .then((res) => res.json())
         .then((data) => {
             const grid = document.getElementById("discoverGrid");
@@ -30,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.innerHTML = `
                     <h2>${item.title}</h2>
                     <figure>
-                        <img src="${item.image}" alt="${item.title}" width="300" height="200" loading="lazy" />
+                        <img src="${item.image}" alt="${item.title}" loading="lazy" />
                     </figure>
                     <address>${item.address}</address>
                     <p>${item.description}</p>

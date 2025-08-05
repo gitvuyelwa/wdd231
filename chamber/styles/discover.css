@@ -1,9 +1,4 @@
 * {
-  --charcoal: #264653ff;
-  --cambridge-blue: #91c7b1ff;
-  --cool-gray: #888098ff;
-  --thistle: #cfb3cdff;
-  --thistle-2: #dfc2f2ff;
   margin: 5px;
 }
 
@@ -76,7 +71,6 @@ nav a:hover {
   height: 44px;
   grid-column: 3/4;
   justify-self: end;
-  background-color: none;
   border: 2px solid white;
   cursor: pointer;
 }
@@ -123,7 +117,8 @@ nav a:hover {
 }
 
 .card img {
-  width: 100%;
+  width: 300px;
+  height: 200px;
   border-radius: 6px;
 }
 
