@@ -1,4 +1,5 @@
- * {
+@media screen and (max-width: 600px){
+  * {
    box-sizing: border-box;
    padding: 10px;
  }
@@ -279,3 +280,4 @@ nav a:hover {
    padding: 1rem;
    border-radius: 5px;
  }
+}

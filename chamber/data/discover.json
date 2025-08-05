@@ -1,50 +1,50 @@
 [
   {
-    "title": "Historic Downtown",
-    "image": "images/item1.webp",
-    "address": "123 Main St, MyCity",
-    "description": "Explore charming shops, local cafes, and historic architecture."
+    "title": "Mandela House Museum",
+    "address": "8115 Vilakazi Street, Orlando West, Soweto, Johannesburg",
+    "description": "The restored home of Nelson Mandela on Vilakazi Street, now a museum filled with memorabilia and history.",
+    "image": "images/mandela.jpg"
   },
   {
-    "title": "Riverwalk Park",
-    "image": "images/item2.webp",
-    "address": "456 River Rd, MyCity",
-    "description": "Perfect for picnics and scenic sunset walks along the river."
+    "title": "Hector Pieterson Museum",
+    "address": "Vilakazi Street, Soweto, Johannesburg",
+    "description": "Memorial museum commemorating the 1976 Soweto uprising through photography and narrative exhibits.",
+    "image": "images/hector.jpg"
   },
   {
-    "title": "City Art Museum",
-    "image": "images/item3.webp",
-    "address": "789 Art Ave, MyCity",
-    "description": "A collection of contemporary and classical art exhibits."
+    "title": "Constitution Hill",
+    "address": "11 Kotze Street, Braamfontein, Johannesburg",
+    "description": "Former prison complex turned Constitutional Court and museum telling South Africa’s journey to democracy.",
+    "image": "images/constitution.jpg"
   },
   {
-    "title": "Botanical Gardens",
-    "image": "images/item4.webp",
-    "address": "101 Garden Lane, MyCity",
-    "description": "Lush gardens showcasing native and exotic plant species."
+    "title": "Apartheid Museum",
+    "address": "Northern Parkway & Gold Reef Road, Ormonde, Johannesburg",
+    "description": "Interactive museum exploring South Africa’s apartheid history and pathway to reconciliation.",
+    "image": "images/apartheid.webp"
   },
   {
-    "title": "Science Discovery Center",
-    "image": "images/item5.webp",
-    "address": "202 Science Dr, MyCity",
-    "description": "Hands‑on exhibits for kids and curious adults alike."
+    "title": "Carlton Centre (Top of Africa)",
+    "address": "150 Commissioner Street, Marshalltown, Johannesburg",
+    "description": "Once Africa’s tallest building, visit the 50th‑floor observation deck for panoramic views over Johannesburg.",
+    "image": "images/carlton.jpg"
   },
   {
-    "title": "Historic Theater",
-    "image": "images/item6.webp",
-    "address": "303 Stage St, MyCity",
-    "description": "Restored 1920s theater hosting live performances and films."
+    "title": "Ponte City Apartments",
+    "address": "1 Lily Avenue, Berea, Johannesburg",
+    "description": "Iconic cylindrical residential tower symbolic of Johannesburg’s urban history and transformation.",
+    "image": "images/pontecity.jpg"
   },
   {
-    "title": "Riverfront Market",
-    "image": "images/item7.webp",
-    "address": "404 Market Blvd, MyCity",
-    "description": "Open‑air market with local produce, crafts, and street food."
+    "title": "Nelson Mandela Bridge",
+    "address": "Smit Street, connecting Braamfontein and Newtown, Johannesburg",
+    "description": "Cable‑stayed bridge and city landmark, beautifully lit at night and linking cultural precincts.",
+    "image": "images/mandela_bridge.jpg"
   },
   {
-    "title": "City Aquarium",
-    "image": "images/item8.webp",
-    "address": "505 Ocean Ave, MyCity",
-    "description": "Marine exhibits and educational programs for all ages."
+    "title": "Johannesburg Art Gallery",
+    "address": "Klein & King George Streets, Joubert Park, Johannesburg",
+    "description": "Home to one of Africa’s largest art collections, featuring local and international artworks.",
+    "image": "images/gallery.jpg"
   }
 ]
