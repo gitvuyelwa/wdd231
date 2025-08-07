@@ -11,15 +11,14 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/final.js" defer></script>
 
     <link rel="icon" href="favicon.ico">
     <!-- <meta property="facebook:title" content="Homepage- Vuyelwa Macanda's Facebook">
@@ -34,12 +33,12 @@
         <button id="ham-btn" class="hamburger"></button>
         <nav id="nav-bar" class="navigation">
             <a href="index.html">Home</a>
-            <a href="calender.html">Weekly Workout Plan</a>
+            <a href="workout.html">Weekly Workout Plan</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <h1>Vuyelwa's Site</h1>
+        <h1>75 Day Challenge</h1>
         <div class="about-photo-wrapper">
             <section class="about">
                 <h2>About me</h2>
@@ -56,18 +55,41 @@
                 <img src="images/profile.jpg" alt="profile" width="200">
             </section>
         </div>
-        <section class="course">
-            <h2>Web Certificate Courses</h2>
-            <div class="buttons">
-                <button id="all-btn" data-filter="ALL">All Courses</button>
-                <button id="wdd-btn" data-filter="WDD">WDD Courses</button>
-                <button id="cse-btn" data-filter="CSE">CSE Courses</button>
+
+        <div class="container">
+
+            <button class="btn" onclick="toggleContent('rules')">Rules</button>
+            <div id="rules" class="content">
+                <ul>
+                    <li>Follow a strict diet (no cheats, no alcohol)</li>
+                    <li>Two 45-minute workouts per day (one must be outside)</li>
+                    <li>Drink 1 gallon (3.8L) of water daily</li>
+                    <li>Read 10 pages of non-fiction per day</li>
+                    <li>Take a daily progress photo</li>
+                </ul>
             </div>
-            <div id="course-credits">
-                <p>Total Credits: <span id="totalCredits">0</span></p>
+
+            <button class="btn" onclick="toggleContent('benefits')">Benefits</button>
+            <div id="benefits" class="content">
+                <ul>
+                    <li>Builds mental toughness and resilience</li>
+                    <li>Improves physical fitness and consistency</li>
+                    <li>Enhances self-confidence and self-discipline</li>
+                    <li>Promotes healthy daily habits</li>
+                    <li>Increases productivity and clarity</li>
+                </ul>
             </div>
-        </section>
-        <dialog id="course-details"></dialog>
+
+            <button class="btn" onclick="toggleContent('diet')">Diet Requirements</button>
+            <div id="diet" class="content">
+                <ul>
+                    <li>Pick a diet and stick to it (keto, paleo, calorie-counting, etc.)</li>
+                    <li>No cheat meals</li>
+                    <li>No alcohol</li>
+                    <li>Must be followed strictly for all 75 days</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="social">
@@ -80,7 +102,7 @@
             <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="16"
                     height="16"></a>
         </div>
-        <p>&copy; <span id="currentyear"></span> | Vuyelwa Macanda | South Africa</p>
+        <p>&copy; 2025</span> | Vuyelwa Macanda | South Africa</p>
         <p>Last Modified: <span id="lastModif"></span></p>
     </footer>
 </body>

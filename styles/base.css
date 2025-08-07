@@ -1,8 +1,16 @@
-body {
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
+*{
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  --lavender-web: #e3dfffff;
+  --dark-purple: #160c28ff;
+  --ultra-violet: #6c698dff;
+  --verdigris: #50a2a7ff;
+  --night: #01110aff;
+  margin: 5px;
 }
+
 
 header, nav, main {
   padding:1rem;
@@ -13,7 +21,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px #160c28ff;
+  background-color: #e3dfffff;
 }
 /*COME BACK*/
 header img {
@@ -33,13 +42,13 @@ nav.show {
 
 nav a {
   padding: .4rem;
-  color: rgb(56, 56, 56);
+  color: #160c28ff;
   text-decoration: none;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px #160c28ff;
 }
 
 nav a:hover {
-  background-color: grey;
+  background-color: #6c698dff;
 }
 /*COme back*/
 .hamburger {
@@ -69,8 +78,8 @@ h1 {
 
 h2 {
   width: 100%;
-  background-color: black;
-  color: #ccc;
+  background-color: #e3dfffff;
+  color: #160c28ff;
   padding: 1rem;
   margin: 0;
   text-align: center;
@@ -87,42 +96,16 @@ h2 {
   display: flex;
   flex-direction: column;
   background: #f9f9f9;
-  border: 0.2em solid black;
+  border: 0.2em solid #e3dfffff;
   gap: 1rem;
 }
 .course-card{
   border: 1px;
   padding: 1rem;
-  border-color: grey;
+  border-color: #160c28ff;
   border-radius: 8px;
 }
 
-/*
-
-section {
-  border: .2em solid black;
-} 
-
-/* .p {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-gap: 5em;
-} */
-
-/* .section{
-    display: grid;
-    grid-template-columns: 5fr 2fr;
-    grid-gap: .5em;
-} */
-/* .course {
-  border: 1px solid #ccc;
-  padding: 1em;
-  margin-bottom: 1em;
-  background: #f9f9f9;
-  border: 0.2em solid black;
-  text-align: center;
-  display:grid;
-}*/
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -135,15 +118,15 @@ button {
   padding: 10px 15px;
   margin-right: 10px;
   cursor: pointer;
-  background-color: #eee;
-  color: black;
+  background-color: #e3dfffff;
+  color: #160c28ff;
   border: none;
   border-radius: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 button:hover {
-  background-color: grey;
+  background-color: #e3dfffff;
 }
 .course-card {
   border: 2px solid #333;
@@ -172,7 +155,7 @@ dialog button{
 }
 
 footer {
-  background-color: #eee;
+  background-color: #e3dfffff;
   padding: 1rem 10px;
   text-align: center;
 }
@@ -189,8 +172,9 @@ footer {
   align-items: center;
   width: 44px;
   height: 44px;
-  border: #ccc solid 1px;
+  border: #160c28ff solid 1px;
   border-radius: 22px;
+  color: #160c28ff;
 }
 
 .social img {
@@ -199,5 +183,5 @@ footer {
 }
 
 .social a:hover {
-  background-color: #ddd;
+  background-color: #6c698dff;
 }

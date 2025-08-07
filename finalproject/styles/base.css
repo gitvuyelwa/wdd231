@@ -1,0 +1,257 @@
+* {
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    --lavender-web: #e3dfffff;
+    --dark-purple: #160c28ff;
+    --ultra-violet: #6c698dff;
+    margin: 2px;
+}
+
+
+header,
+nav,
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #160c28ff;
+    background-color: #e3dfffff;
+}
+
+/*COME BACK*/
+header img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    font-size: large;
+}
+
+nav.show {
+    display: flex;
+}
+
+nav a {
+    padding: .4rem;
+    color: #160c28ff;
+    text-decoration: none;
+    border-bottom: solid 1px #160c28ff;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    background-color: #6c698dff;
+    color: #e3dfffff;
+}
+
+/*COme back*/
+.hamburger {
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+    color: #160c28ff;
+}
+
+
+h2 {
+    background-color: #e3dfffff;
+    color: #160c28ff;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    align-items: center;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #6c698dff;
+    color: #160c28ff;
+    border: none;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #6c698dff;
+    color: #e3dfffff;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.about,
+.photo {
+    background-color: #160c28ff;
+    color: #e3dfffff;
+    font-size: large;
+    padding: 1rem;
+    margin: 0;
+}
+
+/*workout progress section*/
+#progressSection {
+    margin-bottom: 20px;
+}
+
+.progress-container {
+    margin-top: 15px;
+}
+
+#countdownText {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar-bg {
+    background: #6c698dff;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: #160c28ff;
+    transition: width 0.5s;
+}
+
+/*Reset button*/
+.reset-btn {
+    text-align: center;
+    background-color: #e3dfffff;
+    color: #160c28ff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.reset-btn:hover {
+    background-color: #6c698dff;
+}
+
+/* WOrkout plan */
+.weekday-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.weekday-btn {
+    flex: 1;
+    min-width: 100px;
+    background-color: #6c698dff;
+    color: #160c28ff;
+    font-weight: bold;
+
+}
+
+.weekday-btn:hover {
+   background-color: #6c698dff;
+    color: #e3dfffff;
+}
+
+.workout-display {
+    background: #160c28ff;
+    color: #e3dfffff;
+    padding: 15px;
+    border-radius: 6px;
+    min-height: 80px;
+}
+
+.weekday-btn.active {
+    background-color: #160c28ff;
+    color: #e9ecef;
+    font-weight: bold;
+    box-shadow: 0 0 8px #6c698dff;
+}
+
+/*container*/
+/* Style for unordered lists */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 15px 0;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+    list-style: none;
+}
+
+
+
+
+
+
+footer {
+    background-color: #e3dfffff;
+    color: #160c28ff;
+    padding: 1rem 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #160c28ff solid 1px;
+    border-radius: 22px;
+    color: #160c28ff;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #6c698dff;
+
+}

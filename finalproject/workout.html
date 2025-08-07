@@ -11,15 +11,14 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/final.js" defer></script>
 
     <link rel="icon" href="favicon.ico">
     <!-- <meta property="facebook:title" content="Homepage- Vuyelwa Macanda's Facebook">
@@ -34,40 +33,40 @@
         <button id="ham-btn" class="hamburger"></button>
         <nav id="nav-bar" class="navigation">
             <a href="index.html">Home</a>
-            <a href="calender.html">Weekly Workout Plan</a>
+            <a href="workout.html">Weekly Workout Plan</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <h1>Vuyelwa's Site</h1>
-        <div class="about-photo-wrapper">
-            <section class="about">
-                <h2>About me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolorem minima accusamus autem ex
-                    cumque
-                    hic quos voluptates sunt voluptatum exercitationem officia suscipit ipsam, excepturi incidunt amet?
-                    Cumque, aspernatur quaerat?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolorem,
-                    nulla reiciendis, sapiente libero adipisci maiores sit amet sed in voluptatem, eligendi temporibus
-                    magni
-                    ratione aut dicta cumque quibusdam laudantium?</p>
-            </section>
-            <section class="photo">
-                <h2>Student Photo</h2>
-                <img src="images/profile.jpg" alt="profile" width="200">
-            </section>
-        </div>
-        <section class="course">
-            <h2>Web Certificate Courses</h2>
-            <div class="buttons">
-                <button id="all-btn" data-filter="ALL">All Courses</button>
-                <button id="wdd-btn" data-filter="WDD">WDD Courses</button>
-                <button id="cse-btn" data-filter="CSE">CSE Courses</button>
+        <h1>Weekly Workout Plan and Progress</h1>
+        <!-- Start Date Input and Progress -->
+        <div id="progressSection">
+            <label for="startDate"><strong>Start Date:</strong></label>
+            <input type="date" id="startDate" onchange="updateProgress(true)" />
+            <button class="btn reset-btn" onclick="resetChallenge()">Reset Challenge</button>
+            <div class="progress-container">
+                <div id="countdownText"></div>
+                <div class="progress-bar-bg">
+                    <div id="progressBar" class="progress-bar-fill"></div>
+                </div>
             </div>
-            <div id="course-credits">
-                <p>Total Credits: <span id="totalCredits">0</span></p>
+        </div>
+        <!--Workout plan-->
+        <section id="workoutSection">
+            <h2>Weekly Workouts</h2>
+            <div id="weekdayButtons" class="weekday-buttons">
+                <button class="btn weekday-btn" onclick="showWorkout('Monday')">Monday</button>
+                <button class="btn weekday-btn" onclick="showWorkout('Tuesday')">Tuesday</button>
+                <button class="btn weekday-btn" onclick="showWorkout('Wednesday')">Wednesday</button>
+                <button class="btn weekday-btn" onclick="showWorkout('Thursday')">Thursday</button>
+                <button class="btn weekday-btn" onclick="showWorkout('Friday')">Friday</button>
+                <button class="btn weekday-btn" onclick="showWorkout('Saturday')">Saturday</button>
+            </div>
+
+            <div id="workoutDisplay" class="workout-display">
+                <p>Select a day to see the workout.</p>
             </div>
         </section>
-        <dialog id="course-details"></dialog>
     </main>
     <footer>
         <div class="social">
@@ -80,7 +79,7 @@
             <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="16"
                     height="16"></a>
         </div>
-        <p>&copy; <span id="currentyear"></span> | Vuyelwa Macanda | South Africa</p>
+        <p>&copy; 2025</span> | Vuyelwa Macanda | South Africa</p>
         <p>Last Modified: <span id="lastModif"></span></p>
     </footer>
 </body>
