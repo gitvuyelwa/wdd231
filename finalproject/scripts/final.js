@@ -89,7 +89,8 @@ const workouts = {
   Wednesday: "45-minute outdoor walk + yoga/stretching",
   Thursday: "45-minute gym session: weight training (lower body)",
   Friday: "45-minute outdoor cycling + full body mobility exercises",
-  Saturday:"45-minute jog + HIIT"
+  Saturday:"45-minute jog + HIIT",
+  Sunday: "REST DAY"
 };
 
 function showWorkout(day) {

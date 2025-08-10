@@ -8,7 +8,7 @@
 
   }
 
-   main {
+  main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -17,11 +17,13 @@
 
   .about-photo-wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Adjust ratio as needed */
+    grid-template-columns: 2fr 1fr;
+    /* Adjust ratio as needed */
     gap: 1rem;
   }
 
-  .about, .photo {
+  .about,
+  .photo {
     background-color: #160c28ff;
     color: #e3dfffff;
     font-size: large;
@@ -29,18 +31,20 @@
     margin: 0;
   }
 
-  .hamburger{
+  .hamburger {
     display: none;
   }
-  .profile-section{
+
+  .profile-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
     padding: 1rem;
   }
+
   .buttons {
     flex-direction: row;
   }
 
-  
+
 }
