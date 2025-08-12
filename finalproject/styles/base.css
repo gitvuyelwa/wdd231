@@ -125,15 +125,16 @@ button:hover {
     padding: 1rem;
     margin: 0;
 }
-.images {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .images img {
-        width: 90%; /* Optional: shrink a bit from full width */
-        flex: 1 1 100%;
-    }
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images img {
+    width: 90%;
+    flex: 1 1 100%;
+  }
 /*workout progress section*/
 #progressSection {
     margin-bottom: 20px;
