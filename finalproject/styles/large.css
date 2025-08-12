@@ -1,5 +1,5 @@
 @media only screen and (min-width: 600px) {
-  nav {
+  .navigation {
     display: flex !important;
     flex-direction: row;
     justify-content: center;
@@ -45,9 +45,19 @@
   .buttons {
     flex-direction: row;
   }
-
+form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(0, 0, 0/ 0.1);
+    border-radius: 0.5rem;
+    background-color: #e3dfffff;
+    display: grid;
+    color: #160c28ff;
+}
 .images {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
@@ -56,8 +66,8 @@
 }
 
 .images img {
-  flex: 1 1 45%; /* 2 in a row with some spacing */
-  max-width: 100%;
+  flex-direction: row;
+  max-width: 400px;
   height: auto;
   object-fit: cover;
   border-radius: 8px;

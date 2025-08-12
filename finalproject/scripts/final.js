@@ -5,22 +5,33 @@ document.getElementById("lastModif").textContent = lastModified;
 
 
 navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navLinks.classList.toggle('show');
+  navButton.classList.toggle('show');
+  navLinks.classList.toggle('show');
 
 });
 
 //index buttons
-function toggleContent(id) {
-  const content = document.getElementById(id);
-  const allContents = document.querySelectorAll('.content');
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.btn');
+  const contents = document.querySelectorAll('.content');
 
-  allContents.forEach(section => {
-    section.style.display = section.id === id && section.style.display !== 'block'
-      ? 'block'
-      : 'none';
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+
+      contents.forEach(content => {
+        if (content.id === targetId) {
+          // Toggle display
+          const isVisible = content.style.display === 'block';
+          content.style.display = isVisible ? 'none' : 'block';
+        } else {
+          // Hide others
+          content.style.display = 'none';
+        }
+      });
+    });
   });
-}
+});
 //Progress bar
 function updateProgress(fromUser = false) {
   const startDateInput = document.getElementById('startDate');
@@ -89,18 +100,19 @@ const workouts = {
   Wednesday: "45-minute outdoor walk + yoga/stretching",
   Thursday: "45-minute gym session: weight training (lower body)",
   Friday: "45-minute outdoor cycling + full body mobility exercises",
-  Saturday:"45-minute jog + HIIT",
+  Saturday: "45-minute jog + HIIT",
   Sunday: "REST DAY"
 };
 
 function showWorkout(day) {
   const workoutDisplay = document.getElementById('workoutDisplay');
   workoutDisplay.innerHTML = `<strong>${day} Workout:</strong> <br> ${workouts[day]}`;
-   const buttons = document.querySelectorAll('.weekday-btn');
+  const buttons = document.querySelectorAll('.weekday-btn');
   buttons.forEach(btn => {
     btn.classList.toggle('active', btn.textContent === day);
   });
 }
+
 // ==== DOM Loaded Event ====
 window.addEventListener('DOMContentLoaded', () => {
   // Load progress on page load
@@ -123,12 +135,29 @@ window.addEventListener('DOMContentLoaded', () => {
     const day = button.textContent;
     button.addEventListener('click', () => showWorkout(day));
 
-     const toggleButtons = document.querySelectorAll('.toggle-btn');
-  toggleButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const targetId = button.getAttribute('data-target');
-      toggleContent(targetId);
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        toggleContent(targetId);
+      });
     });
   });
-  });
 });
+// join.js
+const timestampInput = document.getElementById('timestamp');
+if (timestampInput) {
+  const now = new Date().toISOString();
+  timestampInput.value = now;
+}
+
+// Populate copyright
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModif").textContent = document.lastModified;
+
+// Read query string
+const params = new URLSearchParams(window.location.search);
+
+// Display values
+document.getElementById("fullName").textContent = params.get("fullName") || "N/A";
+document.getElementById("email").textContent = params.get("email") || "N/A";

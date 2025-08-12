@@ -25,13 +25,13 @@ header {
 }
 
 /*COME BACK*/
-header img {
+.logo {
     display: block;
     width: 50px;
     height: auto;
 }
 
-nav {
+.navigation {
     display: none;
     flex-direction: column;
     font-size: large;
@@ -125,15 +125,16 @@ button:hover {
     margin: 0;
 }
 
-  .images {
+.images {
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  .images img {
-    width: 90%;
-    flex: 1 1 100%;
-  }
+.images img {
+    width: 559px;
+    flex: 1 1 100;
+}
+
 /*workout progress section*/
 #progressSection {
     margin-bottom: 20px;
@@ -162,30 +163,28 @@ button:hover {
     transition: width 0.5s;
 }
 
-.logo {
-  max-width: 100px;
-  height: auto;
-}
 
-.navigation {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.container {
-  max-width: 1200px;
+/* .container {
+    display: flex;
   margin: 0 auto;
   padding: 1rem;
+} */
+
+/* .btn {
+   align-items: center;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #6c698dff;
+    color: #160c28ff;
+    border: none;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: large;
 }
 
-.btn {
-  padding: 0.5rem 1rem;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+
 
 .content {
   display: none;
@@ -194,7 +193,7 @@ button:hover {
 }
 .content.show {
   display: block;
-}
+} */
 
 /*Reset button*/
 .reset-btn {
@@ -227,7 +226,7 @@ button:hover {
 }
 
 .weekday-btn:hover {
-   background-color: #6c698dff;
+    background-color: #6c698dff;
     color: #e3dfffff;
 }
 
@@ -249,35 +248,37 @@ button:hover {
 /*container*/
 /* Style for unordered lists */
 ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 15px 0;
-  color: #333;
-  line-height: 1.6;
-  font-size: 16px;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 15px 0;
+    color: #160c28ff;
+    line-height: 1.6;
+    font-size: 16px;
     list-style: none;
 }
 
 /*form*/
-form{
-    width: 650px;
-    margin: 0 auto;
-    padding: 1rem;
+form {
+    width: 559px;
+    margin: 0;
+    padding: 0;
     border: 1px solid rgb(0, 0, 0/ 0.1);
     border-radius: 0.5rem;
     background-color: #e3dfffff;
     display: grid;
 }
+
 .form-item {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Two-column layout for wider screens */
-.column1, .column2 {
-  width: 100%;
+.column1,
+.column2 {
+    width: 100%;
 }
 
-fieldset{
+fieldset {
     display: grid;
     grid-gap: .5rem;
     margin: 1rem;
@@ -291,16 +292,22 @@ legend {
     font-size: 1.3em;
 }
 
-label, input, button, select, textarea {
+label,
+input,
+button,
+select,
+textarea {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-label{
+label {
     text-align: right;
     padding-right: 1rem;
 }
 
-input, select, textarea{
+input,
+select,
+textarea {
     padding: 0.5rem;
     font-size: 1.1rem;
 }
