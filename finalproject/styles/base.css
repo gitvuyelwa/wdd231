@@ -125,7 +125,15 @@ button:hover {
     padding: 1rem;
     margin: 0;
 }
+.images {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .images img {
+        width: 90%; /* Optional: shrink a bit from full width */
+        flex: 1 1 100%;
+    }
 /*workout progress section*/
 #progressSection {
     margin-bottom: 20px;
@@ -216,7 +224,50 @@ ul {
     list-style: none;
 }
 
+/*form*/
+form{
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0/ 0.1);
+    border-radius: 0.5rem;
+    background-color: #e3dfffff;
+    display: grid;
+}
 
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0/ 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: #160c28ff;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label{
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type='checkbox'] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
 
 
 

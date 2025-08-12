@@ -46,5 +46,20 @@
     flex-direction: row;
   }
 
+.images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
 
+    .images img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      flex: 1 1 45%;
+    }
 }
