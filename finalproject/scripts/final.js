@@ -96,19 +96,32 @@ const workouts = {
 function showWorkout(day) {
   const workoutDisplay = document.getElementById('workoutDisplay');
   workoutDisplay.innerHTML = `<strong>${day} Workout:</strong> <br> ${workouts[day]}`;
-}
-function showWorkout(day) {
-  // Show workout text
-  const workoutDisplay = document.getElementById('workoutDisplay');
-  workoutDisplay.innerHTML = `<strong>${day} Workout:</strong> <br> ${workouts[day]}`;
-
-  // Highlight active button
-  const buttons = document.querySelectorAll('.weekday-btn');
+   const buttons = document.querySelectorAll('.weekday-btn');
   buttons.forEach(btn => {
-    if (btn.textContent === day) {
-      btn.classList.add('active');
-    } else {
-      btn.classList.remove('active');
-    }
+    btn.classList.toggle('active', btn.textContent === day);
   });
 }
+// ==== DOM Loaded Event ====
+window.addEventListener('DOMContentLoaded', () => {
+  // Load progress on page load
+  updateProgress();
+
+  // Add event listener to startDate input
+  const startDateInput = document.getElementById('startDate');
+  if (startDateInput) {
+    startDateInput.addEventListener('change', () => updateProgress(true));
+  }
+
+  // Add event listener to reset button
+  const resetBtn = document.querySelector('.reset-btn');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', resetChallenge);
+  }
+
+  // Add event listeners to weekday buttons
+  const weekdayButtons = document.querySelectorAll('.weekday-btn');
+  weekdayButtons.forEach(button => {
+    const day = button.textContent;
+    button.addEventListener('click', () => showWorkout(day));
+  });
+});
