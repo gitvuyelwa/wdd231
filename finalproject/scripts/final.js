@@ -111,7 +111,6 @@ window.addEventListener('DOMContentLoaded', () => {
   if (startDateInput) {
     startDateInput.addEventListener('change', () => updateProgress(true));
   }
-
   // Add event listener to reset button
   const resetBtn = document.querySelector('.reset-btn');
   if (resetBtn) {
@@ -123,5 +122,13 @@ window.addEventListener('DOMContentLoaded', () => {
   weekdayButtons.forEach(button => {
     const day = button.textContent;
     button.addEventListener('click', () => showWorkout(day));
+
+     const toggleButtons = document.querySelectorAll('.toggle-btn');
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+      toggleContent(targetId);
+    });
+  });
   });
 });
