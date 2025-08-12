@@ -41,43 +41,51 @@
     </header>
     <main>
         <form action="index.php" method="POST">
-        <h1>Contact Information</h1>
-        <div class="form-item column2">
-            <label for="Full Name">Full Name:</label>
-            <input type="text" id="Full Name"><br>
-        </div>
-        <div class="form-item column2">
-            <label for="email">Email:</label>
-            <input type="email" id="email"><br>
-        </div>
-        
-        <h1>Questions</h1>
-        <div class="form-item column1">
-            <label for="favorite workout?">What is your favorite type of workout?</label>
-            <select id="favorite workout?">
-                <option value="cardio">Cardio</option>
-                <option value="Weight Lifting">Weight Lifting</option>
-                <option value="Calisthenics">Calisthenics</option>
-                <option value="Boxing">Boxing</option>
-                <option value="Pilates">Pilates</option>
-                <option value="Sports">Sports</option>
-            </select><br>
-        </div>
+  <h1>Contact Information</h1>
 
-        <div class="form-item column1">
-            <label for="pet">Would you like to subscribe to weekly motivational emails?</label>
-            <input type="checkbox" id="subscribe"><br>
-        </div>
+  <div class="form-item column2">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+  </div>
 
-        <!-- <div class="form-item column1">        
-            <label for="comment">List the places you have lived:</label>
-            <textarea id="comment" rows ='3' cols="25"></textarea>
-        </div> -->
+  <div class="form-item column2">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
 
-        <label for="submit poll"></label>
-        <input type="submit" id="submit poll">
+  <h1>Questions</h1>
 
-    </form>
+  <div class="form-item column1">
+    <label for="favoriteWorkout">What is your favorite type of workout?</label>
+    <select id="favoriteWorkout" name="favoriteWorkout" required>
+      <option value="">--Please choose one--</option>
+      <option value="cardio">Cardio</option>
+      <option value="weight_lifting">Weight Lifting</option>
+      <option value="calisthenics">Calisthenics</option>
+      <option value="boxing">Boxing</option>
+      <option value="pilates">Pilates</option>
+      <option value="sports">Sports</option>
+    </select>
+  </div>
+
+  <div class="form-item column1">
+    <input type="checkbox" id="subscribe" name="subscribe">
+    <label for="subscribe">Subscribe to weekly motivational emails</label>
+  </div>
+
+  <!-- Optional: Add a comment section -->
+  <!--
+  <div class="form-item column1">        
+    <label for="comment">Your comments:</label>
+    <textarea id="comment" name="comment" rows="3" cols="25"></textarea>
+  </div>
+  -->
+
+  <div class="form-item">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+
     <div class="images">
         <img src="images/lifting.jpg" loading="lazy" alt="lifting bar">
         <img src="images/calisthenics.jpg" laoding="lazy" alt="calisthenics">
