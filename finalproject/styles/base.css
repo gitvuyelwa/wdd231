@@ -162,6 +162,40 @@ button:hover {
     transition: width 0.5s;
 }
 
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+.content.show {
+  display: block;
+}
+
 /*Reset button*/
 .reset-btn {
     text-align: center;
