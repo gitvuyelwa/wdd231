@@ -268,6 +268,14 @@ form{
     background-color: #e3dfffff;
     display: grid;
 }
+.form-item {
+  margin-bottom: 1rem;
+}
+
+/* Two-column layout for wider screens */
+.column1, .column2 {
+  width: 100%;
+}
 
 fieldset{
     display: grid;
